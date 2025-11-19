@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Enquiry - Belle Allure</title>
+    <meta name="description" content="Enquire about Belle Allure's services, products, or becoming a volunteer/sponsor. Get personalized responses about costs and availability.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Belle Allure</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+
+    <!-- Main Content -->
+    <main>
+        <section class="form-hero">
+            <h2>Make an Enquiry</h2>
+            <p>Interested in our services, products, or collaboration opportunities? We'd love to hear from you.</p>
+        </section>
+
+        <form class="fancy-form" id="enquiry-form">
+            <div class="form-group">
+                <label for="enquiry-name">Full Name *</label>
+                <input type="text" id="enquiry-name" name="name" class="form-control" required>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-email">Email Address *</label>
+                <input type="email" id="enquiry-email" name="email" class="form-control" required>
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-phone">Phone Number</label>
+                <input type="tel" id="enquiry-phone" name="phone" class="form-control">
+                <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-type">Enquiry Type *</label>
+                <select id="enquiry-type" name="enquiry-type" class="form-control" required>
+                    <option value="">Select enquiry type</option>
+                    <option value="custom-tailoring">Custom Tailoring Service</option>
+                    <option value="personal-styling">Personal Styling</option>
+                    <option value="wardrobe-consultation">Wardrobe Consultation</option>
+                    <option value="product-information">Product Information</option>
+                    <option value="collaboration">Collaboration Opportunity</option>
+                    <option value="sponsorship">Sponsorship</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="error-message" id="type-error">Please select an enquiry type</div>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-budget">Budget Range (if applicable)</label>
+                <select id="enquiry-budget" name="budget" class="form-control">
+                    <option value="">Select budget range</option>
+                    <option value="500-1000">€500 - €1,000</option>
+                    <option value="1000-2500">€1,000 - €2,500</option>
+                    <option value="2500-5000">€2,500 - €5,000</option>
+                    <option value="5000+">€5,000+</option>
+                    <option value="not-specified">Prefer not to specify</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-date">Preferred Date (for services)</label>
+                <input type="date" id="enquiry-date" name="preferred-date" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-message">Detailed Enquiry *</label>
+                <textarea id="enquiry-message" name="message" class="form-control" rows="6" required placeholder="Please provide details about your enquiry, including any specific requirements, preferences, or questions..."></textarea>
+                <div class="error-message" id="message-error">Please provide details about your enquiry</div>
+            </div>
+
+            <div class="success-message" id="enquiry-success">
+                Thank you for your enquiry! We'll get back to you within 24 hours with detailed information.
+            </div>
+
+            <button type="submit" class="form-submit">Submit Enquiry</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year">2025</span> Belle Allure. All rights reserved.</p>
+        <p>Email: contact@belleallure.com | Phone: +331 2345 6789 | Paris, France</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

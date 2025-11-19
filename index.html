@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Allure - Premium Fashion & Style</title>
+    <meta name="description" content="Belle Allure offers custom tailored fashion, exclusive collections, and personal styling services. Discover elegance that whispers and style that shines.">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Belle Allure</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/Hero.pic.jpg" alt="Belle Allure Fashion Collection" class="hero-image">
+            <p>Belle Allure – Elegance That Whispers, Style That Shines.</p>
+        </section>
+
+        <!-- Accordion Section -->
+        <section class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Our Design Philosophy</h3>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>At Belle Allure, we believe fashion is an expression of individuality. Our designs blend timeless elegance with contemporary trends to create pieces that speak to the modern woman.</p>
+                    <p>Each collection is carefully curated to ensure quality, comfort, and style that transcends seasons.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Sustainability Commitment</h3>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>We're committed to ethical fashion practices and sustainable sourcing. Our materials are carefully selected for their quality and environmental impact.</p>
+                    <p>We partner with suppliers who share our values and work to minimize waste throughout our production process.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Customization Options</h3>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Our custom tailoring service allows you to create garments that fit perfectly and reflect your personal style.</p>
+                    <p>From fabric selection to finishing details, our designers work with you to bring your vision to life.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="tabs">
+            <div class="tab-headers">
+                <div class="tab-header active" data-tab="tab1">New Arrivals</div>
+                <div class="tab-header" data-tab="tab2">Best Sellers</div>
+                <div class="tab-header" data-tab="tab3">Seasonal Collections</div>
+            </div>
+
+            <div class="tab-content active" id="tab1">
+                <h3>Latest Additions to Our Collection</h3>
+                <p>Discover our newest designs that blend contemporary trends with timeless elegance.</p>
+                <ul>
+                    <li>Spring Florals Collection - Fresh patterns for the new season</li>
+                    <li>Evening Elegance - Sophisticated pieces for special occasions</li>
+                    <li>Casual Chic - Comfortable yet stylish everyday wear</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="tab2">
+                <h3>Customer Favorites</h3>
+                <p>These beloved pieces continue to capture hearts season after season.</p>
+                <ul>
+                    <li>Classic Tailored Blazer - A wardrobe essential</li>
+                    <li>Signature Little Black Dress - Timeless and versatile</li>
+                    <li>Premium Silk Blouse - Luxurious comfort and style</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="tab3">
+                <h3>Seasonal Selections</h3>
+                <p>Curated collections designed for specific seasons and occasions.</p>
+                <ul>
+                    <li>Winter Warmth - Cozy yet stylish cold-weather options</li>
+                    <li>Summer Breeze - Lightweight fabrics and breezy silhouettes</li>
+                    <li>Autumn Hues - Rich colors perfect for fall transitions</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <h2>Featured Collection</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/2.jpg" alt="Prestige Yellow Suit" data-full="images/2.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3.jpg" alt="Classic Quadro Suit" data-full="images/3.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/4.jpg" alt="Prestige Blueire Suit" data-full="images/4.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/10.jpg" alt="Claire Royal Blue Fashion" data-full="images/10.jpg">
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-content">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search our collections...">
+        </div>
+
+        <!-- Dynamic Content Section -->
+        <div id="dynamic-content">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <!-- Content loaded dynamically via JavaScript -->
+            </div>
+     
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Belle Allure. All rights reserved.</p>
+        <p>Email: contact@belleallure.com | Phone: +331 2345 6789 | Address: Paris, France</p>
+    </footer>
+
+    <!--  JS LINKED CORRECTLY -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

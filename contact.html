@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Belle Allure</title>
+  <meta name="description" content="Contact Belle Allure for appointments, press, or collaborations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="brand">
+      <a href="index.html"><h1>Belle Allure</h1></a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="products.html">Products</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>Prefer email? hello@bellureallure.example</p>
+
+    <form id="contactForm" novalidate>
+      <label>Name
+        <input id="cname" name="name" type="text" required>
+        <span class="err name-error"></span>
+      </label>
+
+      <label>Email
+        <input id="cemail" name="email" type="email" required>
+        <span class="err email-error"></span>
+      </label>
+
+      <label>Type
+        <select id="msgType" name="type">
+          <option value="">Select type</option>
+          <option value="general">General</option>
+          <option value="support">Support</option>
+          <option value="sponsorship">Sponsorship</option>
+          <option value="press">Press</option>
+        </select>
+        <span class="err type-error"></span>
+      </label>
+
+      <label>Message
+        <textarea id="message" name="message" rows="6" minlength="10" required></textarea>
+        <span class="err message-error"></span>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+      <div class="response success-message" style="display:none;">Message sent successfully!</div>
+    </form>
+
+  </main>
+
+  <footer class="site-footer container">&copy; <span id="year">2025</span> Belle Allure</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
